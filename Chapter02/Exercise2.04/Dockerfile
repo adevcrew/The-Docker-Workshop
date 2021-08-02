@@ -1,5 +1,7 @@
 # WORKDIR, COPY and ADD example
 FROM ubuntu:latest 
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install apache2 -y 
 WORKDIR /var/www/html/
 COPY index.html .

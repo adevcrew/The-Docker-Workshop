@@ -1,5 +1,6 @@
 # Start with Ubuntu base image
-FROM ubuntu:18.04
+ARG TAG=18.04
+FROM ubuntu:$TAG
 
 # Set labels
 LABEL maintainer=sathsara

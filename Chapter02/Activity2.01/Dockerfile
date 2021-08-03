@@ -7,6 +7,7 @@ LABEL version=1.0
 
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Seoul
 
 # Install Apache, PHP, and other packages
 RUN apt-get update && \
